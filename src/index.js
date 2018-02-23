@@ -16,8 +16,8 @@ module.exports = function getZerosCount(number, base) {
       m = number
       while (m / i > 0){
         v = v + Math.floor(m / i);
-        m = Math.floor(m / i);}
-      z = (v / exp);
+        m = (m / i);}
+      z = Math.floor(v / exp);
       if (res > z){
         res = z;}
     }
